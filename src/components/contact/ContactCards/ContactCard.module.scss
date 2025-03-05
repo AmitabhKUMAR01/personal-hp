@@ -1,0 +1,28 @@
+
+.container{
+    @apply  w-full p-8  gap-8 mx-auto rounded-none md:gap-8 md:rounded-tr-xl md:rounded-br-xl  flex flex-col justify-center  bg-custom-gradient-contact1;
+    .heading{
+        @apply  text-17.6 text-white font-semi md:text-2xl ;
+
+    }
+    .container2{
+        @apply flex gap-4 items-center;
+        .link{
+            @apply text-white text-sm hover:underline lg:text-16 font-medium;
+        }
+        .para{
+            @apply  text-12.8 md:text-xl  text-white font-mid1;
+
+        }
+    }
+    .container3{
+        @apply flex gap-4 items-center w-full;
+        .image{
+            @apply h-32 w-32;
+        }
+        .para{
+            @apply max-w-[90%] text-12.8 md:text-md lg:text-lg text-white font-semibold;
+
+        }
+    }
+}

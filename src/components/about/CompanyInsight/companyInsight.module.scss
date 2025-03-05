@@ -1,0 +1,22 @@
+.companyInsight {
+  @apply flex flex-col gap-20 md:gap-11 md:flex-row-reverse;
+
+  .imgs {
+    @apply sm:w-40p md:w-30p lg:w-30p xl:w-40p w-full md:mt-0 ;
+  }
+  .heading {
+    @apply flex flex-col gap-5 lg:mt-24 text-left sm:text-center md:text-left mx-auto md:w-70p lg:w-70p xl:w-60p w-full xl:mt-20 2xl:ml-16;
+
+    h1 {
+      @apply lg:text-24 xl:text-4xl text-2xl text-heading leading-tight lg:leading-snug sm:text-left font-semi lg:-mt-16 xl:pt-16;
+    }
+    .data {
+      @apply text-sm lg:text-13 xl:text-16 lg:leading-7 leading-7 xl:leading-8 text-para 2xl:font-medium 2xl:text-18 sm:text-left sm:text-13 font-medium;
+
+      text {
+        @apply opacity-55;
+      }
+    }
+  }
+}
+

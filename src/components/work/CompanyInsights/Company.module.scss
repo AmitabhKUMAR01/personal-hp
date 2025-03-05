@@ -1,0 +1,54 @@
+.companyContainer {
+  @apply flex w-full flex-col items-center max-md:gap-10;
+
+  .companyItem {
+    @apply flex w-full items-center md:gap-[100px] max-md:flex-col max-md:gap-5;
+
+    &:nth-child(even) {
+      @apply flex-row-reverse max-md:flex-col;
+    }
+
+    .imageContainer {
+      @apply relative flex w-1/2 justify-center overflow-hidden max-md:w-5/6;
+
+      &.gradientLeft {
+        @apply bg-gradient-to-r from-secondary to-secondary1;
+      }
+
+      &.gradientRight {
+        @apply bg-gradient-to-r from-secondary1 to-secondary;
+      }
+
+      .imageWrapper {
+        @apply flex h-full w-full items-center justify-center;
+        animation: rotateImg 2s infinite ease-in-out;
+      }
+
+      .image {
+        @apply h-auto w-full;
+      }
+    }
+  }
+
+  .textContainer {
+    @apply h-full w-[35%] max-md:w-5/6 text-customGray max-md:text-sm max-md:text-justify;
+
+    h2 {
+      @apply mb-4 text-2xl font-bold lg:text-4xl text-customBlack max-md:text-xl;
+    }
+  }
+}
+
+@keyframes rotateImg {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateY(-20px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(0) rotate(-20deg);
+  }
+}

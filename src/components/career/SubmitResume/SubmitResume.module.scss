@@ -1,0 +1,102 @@
+.container {
+  @apply xl:w-2/3 mx-auto p-3 mb-12 ;
+    
+  h2{
+    @apply text-22 sm:text-27 md:text-32 lg:text-36 xl:text-45 sm:text-center mb-6 font-semi;
+  }
+
+  form {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-11 p-2;
+
+    .column {
+      @apply grid gap-10 ;
+      .shiftGroup {
+        @apply relative gap-5;
+      }
+
+      .shiftLabel {
+        @apply absolute left-3 top-1 text-para font-medium transform -translate-y-1/2 text-12 md:text-16 ease-in-out;
+        transition: all 0.3s ease-in-out;
+        padding: 0 5px;
+      }
+
+      .shiftInput {
+        @apply w-full border-b-2 focus:outline-none transition-all;
+
+        &:focus + .shiftLabel,
+        &:not(:placeholder-shown) + .shiftLabel {
+          @apply top-0 -left-2 text-12;
+        }
+      }
+
+      input,
+      select,
+      textarea {
+        @apply w-full border-b-2 focus:outline-none font-medium text-16 focus:border-red-600 p-3;
+      }
+
+      select {
+        @apply text-para ;
+
+        .OptionHide {
+          @apply hidden
+        }
+
+        .optionText {
+          @apply text-black text-14 hover:bg-red-600;
+        }
+      }
+
+      .fileUpload {
+        @apply border-b-2 py-1 px-4 items-center flex justify-between cursor-pointer;
+  
+        .hiddenInput {
+          @apply hidden;
+        }
+        
+        label {
+          @apply bg-lightGray text-[#5e5858] font-normal p-2 rounded cursor-pointer;
+        }
+        
+        span {
+          @apply text-para text-16 text-left font-medium;
+        }
+      }
+
+    .modal{
+      @apply flex items-center;
+
+      .desc{
+        @apply cursor-pointer relative;
+      }
+    }
+
+    }
+
+    .msg {
+        @apply w-full px-4 font-medium text-14 border-b-2 focus:outline-none focus:border-red-600;
+    }
+
+    .checkboxes {
+      @apply col-span-1 md:col-span-2 space-y-11 text-sm text-heading font-semibold;
+
+      .checkboxesLabel{
+        @apply space-y-3;
+        label {
+          @apply flex items-center gap-2 md:gap-1;
+
+          // checkbox{
+          //   @apply bg-red-700;
+          // }
+        }
+      }
+    }
+
+    .btn {
+      @apply flex justify-center text-16 text-white;
+      span {
+        @apply flex items-center gap-4; 
+      }
+    }
+  }
+}

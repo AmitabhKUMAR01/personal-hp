@@ -1,0 +1,94 @@
+.main {
+    @apply flex w-[90%] 2xl:w-[85%]  max-lg:w-[95%] max-sm:w-[90%]  h-full py-5 mx-auto md:flex-row flex-col;
+   
+  
+    // blogdetailsleft (left section)
+    .blogdetailsleft {
+      @apply w-full md:w-[75%] h-full flex flex-col;
+  
+      .top {
+        @apply w-full h-full flex flex-wrap gap-7 sm:flex-row flex-col;
+  
+        .blogcard {
+          @apply space-y-2 w-full md:w-[46%] h-full hover:cursor-pointer;
+  
+          .imgdiv {
+            @apply w-full ;
+            .img {
+              @apply w-full h-full rounded-lg object-cover object-right aspect-[131/90] align-middle;
+            }
+          }
+  
+          .carddetails {
+            @apply flex gap-2 items-center;
+            .detail {
+              @apply flex gap-1 items-baseline font-medium font-montserrat text-[#949494] text-[14px];
+              .detaildote{
+                @apply w-[0.375rem] h-[0.375rem] bg-[#ff3656] rounded-full;
+              }
+            }
+          }
+  
+          .info {
+            @apply flex flex-col gap-2;
+  
+            .titel {
+              @apply text-[0.9rem] font-montserrat font-bold text-blue-600;
+            }
+  
+            .information {
+              @apply text-[#949494] text-[0.9rem] line-clamp-2 font-montserrat font-medium;
+            }
+  
+            .cardbtn {
+              @apply border-none w-fit text-[0.9rem] text-customRed;
+            }
+          }
+        }
+      }
+  
+      .pagination {
+        @apply flex justify-center items-center gap-4 pt-6 w-full;
+  
+        .button {
+          @apply bg-white ;
+        }
+  
+        .button2 {
+          @apply shadow-2xl text-customRed  px-[1.5rem] py-[0.75rem] text-[1.25rem] ;
+        }
+      }
+    }
+  
+    // blogdetailsright (right section)
+    .blogdetailsright {
+      @apply w-full md:w-[25%] flex flex-col gap-3 mt-6 md:mt-0;
+  
+      .filterheading {
+        @apply text-[1.5rem] font-montserrat font-bold ;
+      }
+  
+      .fcard {
+        @apply w-full max-h-36 h-fit flex gap-3 py-2 border-b border-[#949494] hover:cursor-pointer;
+  
+        .fiterimgdiv {
+          @apply w-[40%] h-auto  rounded-md;
+          .fimg {
+            @apply w-full h-full rounded-md align-middle;
+          }
+        }
+  
+        .filterdetails {
+          @apply w-[60%]  h-fit flex flex-col justify-center;
+  
+          .filtertitle {
+            @apply  font-montserrat font-semibold  text-[1rem] max-sm:text-[12px] text-black tracking-wide;
+          }
+  
+          .filterdate {
+            @apply font-montserrat font-medium text-[#949494] text-[12px];
+          }
+        }
+      }
+    }
+  }

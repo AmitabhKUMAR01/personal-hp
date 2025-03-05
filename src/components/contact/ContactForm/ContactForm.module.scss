@@ -1,0 +1,96 @@
+.container {
+  @apply flex w-full justify-center p-8;
+
+  .form {
+    @apply w-full bg-white flex flex-col gap-5;
+
+    .heading {
+      @apply mb-6 text-3xl font-bold text-customBlack;
+    }
+
+    .gridLayout {
+      @apply grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2;
+
+      .inputGroup {
+        @apply relative;
+
+        .label {
+          @apply pointer-events-none absolute left-3 top-3 text-sm text-gray-400 transition-all duration-300 ease-in-out;
+        }
+
+        .input {
+          @apply w-full border-b-2 border-gray-300 pt-4 text-lg placeholder-transparent focus:border-red-500 focus:outline-none;
+
+          &:focus ~ .label,
+          &:not(:placeholder-shown) ~ .label {
+            @apply top-0 left-0 text-xs text-red-500;
+          }
+        }
+
+        .select {
+          @apply w-full border-b-2 border-gray-300 pt-4 px-2 cursor-pointer appearance-none text-lg placeholder-transparent focus:border-red-500 focus:outline-none ;
+          option{
+            @apply  text-customGray text-sm cursor-pointer;
+          }
+          
+        }
+        
+        .select {
+          @apply appearance-none bg-white pr-10 bg-no-repeat ;
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tZG93biI+PHBhdGggZD0ibTYgOSA2IDYgNi02Ii8+PC9zdmc+'); 
+          background-position: right 10px center;
+          background-size: 16px;
+        }
+
+        .error {
+          @apply mt-1 text-xs text-red-500;
+        }
+
+        .errorBorder {
+          @apply border-red-500;
+        }
+      }
+    }
+
+    .textareaGroup {
+      @apply mt-6 relative;
+
+      .label {
+        @apply absolute left-3 top-3 text-lg text-gray-400 transition-all duration-300 ease-in-out pointer-events-none;
+      }
+
+      .textarea {
+        @apply w-full border-b-2 border-gray-300 text-sm placeholder-transparent focus:border-red-500 focus:outline-none pt-4;
+
+        &:focus ~ .label,
+        &:not(:placeholder-shown) ~ .label {
+          @apply top-0 left-0 text-xs text-red-500;
+        }
+      }
+
+      .error {
+        @apply mt-1 text-xs text-red-500;
+      }
+    }
+
+    .checkboxGroup {
+      @apply mt-6 flex items-center;
+
+      .checkbox {
+        @apply h-4 w-4;
+      }
+
+      .label {
+        @apply ml-2 text-sm font-medium text-gray-900;
+      }
+    }
+
+    .buttonContainer {
+      @apply mt-8 flex justify-end;
+
+      .submitButton {
+        @apply flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-400 px-6 py-3 text-lg font-medium text-white shadow-md hover:opacity-90;
+      }
+    }
+  }
+}

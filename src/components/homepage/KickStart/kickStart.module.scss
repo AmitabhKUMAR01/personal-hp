@@ -1,0 +1,28 @@
+.main {
+  @apply py-10;
+  .container {
+    @apply w-full h-395 flex items-center justify-center bg-fixed bg-parallax bg-cover max-md:bg-center max-md:justify-center max-sm:justify-center 2xl:h-878 xl:h-464 ;
+
+    .wrapper {
+      @apply w-5/6 flex flex-col gap-8 justify-center items-center max-md:justify-center  ;
+
+      .content {
+        @apply flex flex-col gap-5 text-white justify-center items-center w-full max-md:justify-start ;
+
+        h1 {
+          @apply text-6xl max-md:text-4xl font-extrabold max-lg:text-3xl lg:text-4xl max-sm:text-2xl;
+        }
+        p {
+          @apply text-2xl max-md:text-lg max-sm:text-md lg:text-md;
+        }
+      }
+
+      .btn {
+        @apply text-white bg-gradient-to-r from-[#ff3c57] to-[#ff7861] p-3 rounded-md transition-all duration-300 ease-in-out;
+
+        @apply max-md:self-start;
+      }
+    }
+  }
+}
+// checking 

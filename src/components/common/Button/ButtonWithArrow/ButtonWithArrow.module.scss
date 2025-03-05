@@ -1,0 +1,65 @@
+.btnContainer {
+  @apply w-72; 
+}
+
+.sm {
+  @apply w-48;
+}
+.md {
+  @apply w-52;
+}
+.lg {
+  @apply w-60;
+}
+.xl {
+  @apply w-72;
+}
+
+.learnMore {
+  @apply relative inline-block cursor-pointer outline-none border-0 align-middle text-transparent bg-transparent p-0 w-full;
+
+  .circle {
+    @apply transition-all duration-500 ease-out relative m-0 w-12 h-12 bg-gradient-to-r from-[#ff3c57] to-[#ff7861] rounded-full flex items-center;
+
+    .icon {
+      @apply absolute top-0 bottom-0 m-auto bg-white flex justify-center items-center;
+
+      &.arrow {
+        @apply transition-all duration-500 ease-out left-[0.625rem] w-[1.125rem] h-[0.125rem] bg-none;
+        background: none;
+
+        &::before {
+          @apply absolute border-t-2 border-r-2 border-solid border-white w-[0.625rem] h-[0.625rem] rotate-45 top-[-0.25rem] right-[0.0625rem];
+        }
+      }
+    }
+
+    .chevronIcon {
+      @apply w-6 h-6 text-white left-[14px] absolute transition-all duration-500 ease-out;
+    }
+  }
+
+  .buttonText {
+    @apply transition-all duration-500 ease-out absolute inset-0 py-3 font-bold leading-6 text-center text-md;
+    color: var(--text-color, #fff);
+  }
+}
+
+.learnMore:hover {
+  .circle {
+    @apply w-full;
+
+    .icon {
+      &.arrow {
+        @apply bg-white transform translate-x-4;
+      }
+    }
+    .chevronIcon {
+      @apply text-white transform translate-x-4;
+    }
+  }
+
+  .buttonText {
+    @apply text-white;
+  }
+}

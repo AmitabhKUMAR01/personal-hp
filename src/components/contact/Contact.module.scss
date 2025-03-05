@@ -1,0 +1,6 @@
+.container{
+    @apply flex flex-col justify-center gap-20  relative w-full;
+   .container1{
+    @apply flex-col w-full md:flex md:flex-row absolute top-[-400px]  items-center justify-center;
+   }
+}

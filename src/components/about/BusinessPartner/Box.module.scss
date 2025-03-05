@@ -1,0 +1,24 @@
+.box {
+  @apply flex flex-col justify-start items-start xl:px-2 h-[150px] rounded-lg;
+  // background: linear-gradient(to right, #ff3656, #ff5f59);
+}
+
+.boxInside {
+  @apply flex flex-col w-full;
+}
+
+.imgContainer {
+  @apply w-16 h-16 xl:w-20 xl:h-20 flex justify-start;
+}
+
+.icon {
+  @apply w-full h-auto;
+}
+
+.counter {
+  @apply text-55 font-bold leading-tight;
+}
+
+.text {
+  @apply text-sm mt-0;
+}

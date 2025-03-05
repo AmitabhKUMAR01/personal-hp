@@ -1,0 +1,69 @@
+.main {
+    @apply flex gap-[3%]  w-[90%] 2xl:w-[85%]  max-lg:w-[95%] max-sm:w-[90%] h-full py-5 mx-auto mt-32 md:flex-row flex-col;
+  
+    // center css
+  
+    
+      .blogdetailsleft {
+        @apply md:w-[70%] w-full h-full ;
+        .blogcard {
+            @apply space-y-3 w-full h-full hover:cursor-pointer ;
+            .titel {
+              @apply font-montserrat font-black text-[2.5rem]  leading-[1.5] max-sm:text-[2rem];
+            }
+          .imgdiv {
+            @apply w-full h-[50vh] max-xl:h-auto;
+            .img {
+              @apply w-full h-full rounded-md object-cover aspect-[16/9] align-middle;
+            }
+          }
+  
+          .carddetails {
+            @apply flex gap-10 items-center;
+            .detail {
+              @apply flex gap-1 items-center  font-medium font-montserrat text-[#949494] text-[14px] whitespace-nowrap;
+              .detaildote{
+                @apply w-[15%] h-fit text-[#ff3656] ;
+              }
+            }
+          }
+          .info {
+            @apply flex flex-col gap-2;
+            .information {
+              @apply text-[#949494] text-[0.9rem] line-clamp-2 font-montserrat font-medium;
+            }
+            
+          }
+        }
+      }
+      .blogdetailsright {
+        @apply w-full md:w-[27%] flex flex-col gap-3 mt-6 md:mt-0;
+    
+        .filterheading {
+          @apply text-[1.5rem] font-montserrat font-bold;
+        }
+    
+        .fcard {
+          @apply w-full max-h-36 h-fit flex gap-3 py-2 border-b border-[#949494] hover:cursor-pointer;
+    
+          .fiterimgdiv {
+            @apply w-[40%] h-auto  rounded-md;
+            .fimg {
+              @apply w-full h-full rounded-md align-middle;
+            }
+          }
+    
+          .filterdetails {
+            @apply  w-[60%]  h-fit flex flex-col justify-center;
+    
+            .filtertitle {
+              @apply font-montserrat font-semibold  text-[1rem] max-sm:text-[12px] text-black tracking-wide;
+            }
+    
+            .filterdate {
+              @apply font-montserrat font-medium text-[#949494] text-[12px];
+            }
+          }
+        }
+      }
+    }

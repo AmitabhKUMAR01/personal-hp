@@ -1,0 +1,12 @@
+.container{
+    @apply w-full  h-308 bg-grayWhite py-20  mt-96 max-md:mt-[1200px];
+    .container1{
+        @apply w-5/6 flex mx-auto;
+        .container2{
+            @apply w-100p flex flex-col gap-6 justify-center items-center md:gap-6;
+            .heading{
+                @apply text-28 md:text-4xl font-bold leading-6;
+            }
+        }
+    }
+}

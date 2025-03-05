@@ -1,0 +1,23 @@
+.scrolltotop {
+  @apply fixed bottom-4 right-4 lg:bottom-7 z-20 lg:right-7  flex items-center justify-center;
+
+  .scrollContainer {
+    @apply relative w-12 h-12 flex items-center justify-center cursor-pointer rounded-full;
+
+    .progress-circle {
+      @apply absolute w-full h-full;
+    }
+
+    .progressBackground {
+      @apply absolute w-full h-full;
+    }
+
+    .scrollButton {
+      @apply w-12 h-12 bg-transparent  rounded-full flex items-center justify-center;
+
+      .icon {
+        @apply text-red-500 w-7 h-7 relative z-10;
+      }
+    }
+  }
+}

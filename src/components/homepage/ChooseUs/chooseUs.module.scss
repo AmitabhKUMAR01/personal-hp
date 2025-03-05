@@ -1,0 +1,40 @@
+.container {
+  @apply flex h-full w-full flex-col items-center justify-center gap-5 py-10;
+  .wrapper {
+    @apply flex w-5/6 flex-col items-center justify-center gap-8 max-sm:gap-5;
+    .title {
+      @apply text-5xl font-bold max-md:text-2xl;
+    }
+    .para {
+      @apply w-full text-center text-lg tracking-wide text-customGray max-sm:text-justify max-sm:text-sm;
+    }
+
+    .divContainer {
+      @apply flex w-full flex-col max-md:gap-5  items-center md:flex-row md:gap-8 lg:justify-between  2xl:justify-evenly;
+
+      .left {
+        @apply  h-full w-full lg:w-45p 2xl:w-2/5 aspect-square;
+        img {
+          @apply w-full flex-1 2xl:h-full;
+        }
+      }
+      .right {
+        @apply grid aspect-square  2xl:aspect-video max-2xl:min-h-max h-full w-full grid-cols-1 gap-5 max-lg:overflow-y-scroll lg:w-[49%] lg:grid-cols-2 2xl:w-3/5;
+        .content {
+          @apply flex h-full flex-col items-center  gap-1 rounded-lg rounded-br-3xl rounded-tl-3xl border-2 border-gray-300 p-2 2xl:p-5;
+          .image {
+            svg {
+              @apply lg:h-12 lg:w-12 w-12 h-12;
+            }
+          }
+          .cardtitle {
+            @apply font-semibold max-md:text-sm lg:text-xl xl:text-2xl;
+          }
+          .cardpara {
+            @apply w-full whitespace-normal text-center text-xs font-medium text-customGray max-md:text-xs lg:w-full lg:text-xs xl:text-sm 2xl:w-11/12;
+          }
+        }
+      }
+    }
+  }
+}

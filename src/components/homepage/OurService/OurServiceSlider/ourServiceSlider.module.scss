@@ -1,0 +1,31 @@
+.wrapper {
+  @apply w-full h-full;
+
+  .swiper {
+    @apply w-full h-full;
+
+    .serviceSlide {
+      @apply flex justify-center items-center;
+
+      .serviceSlider {
+        @apply flex flex-col gap-4 items-start text-white bg-gradient-to-r from-[#ff3c57] to-[#ff7861] shadow-md rounded-xl p-7 2xl:h-96 xxl:justify-center max-xl:h-350 xl:h-400;
+
+        img {
+          @apply w-20 h-20 mb-4 2xl:w-28 2xl:h-28;
+        }
+
+        .heading {
+          @apply text-xl font-bold mb-2 text-start 2xl:text-xl;
+        }
+
+        .para {
+          @apply text-sm  mb-4 text-start  lg:text-md lg:font-semibold;
+        }
+
+        .button {
+          @apply text-white py-2 px-4 rounded-lg;
+        }
+      }
+    }
+  }
+}

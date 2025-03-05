@@ -1,0 +1,145 @@
+.main{
+    @apply w-full h-screen relative;
+    &.blog_details{
+        @apply w-full h-fit;
+    }
+    
+    .blognav{
+        @apply fixed left-0 top-0 z-50 w-full;
+    }
+    .top{
+        @apply absolute  w-full h-full flex flex-col ;
+      
+        .navbardiv{
+            @apply fixed left-0 top-0 z-50 w-full;
+            
+        }
+        .inner{
+            @apply w-full h-full flex justify-center items-center ;
+            .homecard{
+                @apply  w-fit h-fit  flex flex-col items-center justify-center gap-[1rem] max-lg:mt-16;
+               
+                    .mainmotiondiv{
+                        @apply relative ;
+                        .linemotiondiv{
+                            @apply bg-custom-gradient-homeline absolute left-0 2xl:top-[5rem] w-[57%] h-[22px] max-sm:h-[10px]  max-2xl:top-[5rem] lg:top-[3.7rem] max-lg:top-[2.3rem] max-md:top-[2rem] max-sm:top-[1.6rem]  ;
+                        }
+                        .h1motiondiv{
+                            @apply relative flex flex-wrap justify-center 2xl:gap-7 max-2xl:gap-5 max-lg:gap-4 max-md:gap-3 max-sm:gap-2 font-montserrat  2xl:text-[5.18rem] max-2xl:text-[4rem]  max-2xl:font-bold max-lg:text-[3rem] max-md:text-[2.5rem] max-sm:text-[1.8rem]   opacity-100 font-extrabold leading-normal text-white whitespace-nowrap;
+                        }
+                        .h2motiondiv{
+                            @apply relative 2xl:-mt-6 max-2xl:-mt-4 max-lg:-mt-3 max-md:-mt-2 max-sm:-mt-1 flex flex-wrap justify-center 2xl:gap-7 max-2xl:gap-5 max-lg:gap-4 max-md:gap-3 max-sm:gap-2 font-montserrat  2xl:text-[5.18rem] max-2xl:text-[4rem]  max-2xl:font-bold max-lg:text-[3rem] max-md:text-[2.5rem] max-sm:text-[1.8rem] opacity-100 font-extrabold leading-normal text-white whitespace-nowrap;
+                        }
+                    }
+                    .motionpara{
+                        @apply 2xl:w-[55%]   text-center font-montserrat   2xl:text-[1.5rem] font-semibold max-2xl:w-[65%] max-2xl:text-[1rem] max-sm:text-[0.7rem]  max-2xl:leading-[1.5] max-sm:w-[100%] opacity-100 text-white;
+                    }
+                    .motionbtn{
+                        @apply mt-[1rem] text-center;
+                    }
+                
+            }
+            .blogmain{
+                @apply   w-full flex flex-col items-center justify-center ;
+                &.blog{
+                    @apply w-[90%]  h-fit  mt-52  max-sm:mt-80 ;
+                }
+                &.about {
+                    @apply 2xl:w-[90%]   h-full mt-52 ; // Only for "about"
+                  }
+                    &.our_work{
+                        @apply w-[90%]   h-full mt-52 max-2xl:mt-56 max-sm:mt-72 ;
+                    }
+                    &.career{
+                        @apply  w-[90%]  mt-16 gap-11  max-sm:gap-2  max-sm:mt-24 max-md:mt-12 max-xl:mt-20;
+                        .blogheading{
+                            @apply text-[2.7rem] text-white font-montserrat font-extrabold text-center leading-[3rem] w-full;
+                        }
+                        .careerbtns{
+                            @apply w-fit h-fit md:flex md:gap-6 max-md:flex max-md:flex-col max-md:justify-center max-md:gap-3;
+                            
+                            .btn{
+                                @apply max-sm:w-[11.95rem] max-sm:h-[2.9rem]  max-sm:text-[0.8rem] w-[12.95rem] h-[3.43rem] bg-white text-customRed font-montserrat rounded-4xl font-bold;
+                            }
+                        }
+                    }
+                    &.contact{
+                        @apply w-[90%] h-fit;
+                    }
+                    &.calculator{
+                        @apply  w-[90%] mt-28 max-sm:mt-40;
+                    }
+                     &.appdevelopment{
+                      @apply w-[90%] h-fit mt-48 box-border pt-12 2xl:pt-32;
+                        }
+                        &.softwaredevelopment{
+                            @apply w-[90%] h-fit mt-48 box-border pt-12 2xl:pt-32;
+                        }
+                        &.webdesign{
+                            @apply w-[90%] h-fit mt-48 box-border pt-16 2xl:pt-32 max-sm:pt-10;
+                        }
+                        &.banding{
+                            @apply w-[90%] h-fit mt-48 box-border pt-12 2xl:pt-28;
+                        }
+                        &.digitalmarketing{
+                            @apply w-[90%] h-fit mt-48 box-border pt-12 2xl:pt-32;
+                        }
+                        &.dialersoftware{
+                            @apply w-[90%] h-fit mt-48 box-border 2xl:pt-32 pt-10;
+                        }
+                .blogheading{
+                    @apply  text-white font-montserrat font-extrabold text-center opacity-100 ;
+                    &.blog{
+                        @apply w-[80%] max-sm:w-full leading-[1.2]  max-lg:leading-normal mb-[1rem] 2xl:text-[3.2rem] lg:text-[3rem] max-lg:text-[2rem] max-sm:text-[1.5rem]; 
+                    }
+                    &.about{
+                        @apply w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4 ;
+                    }
+                    &.our_work{
+                        @apply leading-[1.2] max-lg:leading-normal lg:text-[3rem]  max-lg:text-[2rem]  max-sm:text-[1.5rem]  mb-[1rem] w-[80%] max-sm:w-full ;
+                    }
+                    &.career{
+                       @apply  text-[clamp(.438rem,2vw+1rem,3.125rem)] max-sm:text-[clamp(.438rem,1.5vw+1rem,3.125rem)] w-[80%] leading-[3rem] max-sm:leading-[2.2rem]; 
+                    }
+                    &.contact{
+                        @apply text-[clamp(.438rem,2vw+1rem,3.125rem)] leading-[4.5rem] ;
+                    }
+                    &.calculator{
+                        @apply  w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full  mt-9 max-2xl:mt-1 max-lg:mt-4 ;
+                    }
+                    &.appdevelopment{
+                        @apply w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4  ;
+                          }
+                          &.softwaredevelopment{
+                              @apply  w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4  ;
+                          }
+                          &.webdesign{
+                              @apply  w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4  ;
+                          }
+                          &.banding{
+                              @apply   w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4 ;
+                          }
+                          &.digitalmarketing{
+                              @apply   w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4 ;
+                          }
+                          &.dialersoftware{
+                              @apply   w-[80%] lg:text-[3rem] leading-[1.2] max-lg:leading-normal  mb-[1rem] max-lg:text-[2rem] max-sm:text-[1.7rem] max-sm:w-full mt-9 max-2xl:mt-1 max-lg:mt-4 ;
+                          }
+                }
+                .blogpara{
+                    @apply font-montserrat  font-semibold text-white text-center opacity-100 max-w-[75ch] text-[1.25rem] lg:mb-[1rem] max-lg:text-[1rem] max-lg:w-[90%] leading-normal max-lg:mx-auto ;
+                   
+                }
+                .blogbtndiv{
+                    @apply flex flex-col justify-between items-center  h-fit w-fit mt-16 max-2xl:mt-12 max-lg:mt-12 max-sm:mt-20;
+                }
+                .bloganimation{
+                    @apply w-[44px] h-[44px] border-l-[0.2rem] border-b-[0.2rem] border-white animate-explore;
+                }
+                .blogbtn{
+                    @apply text-[1.2rem] font-montserrat py-[4rem] text-white  font-bold;
+                }
+            }
+        }
+    }
+}

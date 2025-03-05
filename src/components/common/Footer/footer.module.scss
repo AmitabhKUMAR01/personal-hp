@@ -1,0 +1,80 @@
+.main{
+    @apply w-full h-auto  bg-footer bg-cover lg:bg-contain  bg-center bg-no-repeat opacity-85 bg-black flex flex-col items-center border-t-4 border-customRed pt-16 pb-5 gap-12;
+    .top{
+        @apply w-5/6 h-fit  grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-3    ;
+        .Coldata{
+            @apply   space-y-2 lg:col-span-2 ;
+            .heading{
+                @apply text-lg font-semibold  text-white;
+            }
+            .coldetails{
+                @apply  flex flex-col gap-2 ;
+                .link{
+                    @apply relative inline-block  after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-customRed after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 text-sm font-medium  text-customGray whitespace-nowrap ;
+                  
+                }
+            }
+        }
+        .Coldatalast{
+            @apply space-y-5 lg:col-start-9 lg:col-end-[-1]  text-white w-full ;
+            .headinglast{
+                @apply text-lg font-semibold  text-white ;
+            }
+            .contentdiv{
+                @apply space-y-1 ;
+                .imgdiv{
+                    @apply flex  gap-1 items-center text-sm font-semibold text-white ;
+                    .img{
+                        @apply size-7   rounded-full;
+                    }
+                }
+                .info{
+                    @apply text-sm font-semibold text-customGray ;
+                }
+            }
+            .coldatabottom{
+                @apply space-y-5 pt-3;
+                .emaildiv{
+                    @apply space-y-1  text-sm font-medium text-white ;
+                    .email{
+                        @apply text-sm font-medium text-customGray ;
+                    }
+                }
+                .phonediv{
+                    @apply  space-y-1  text-sm font-medium text-customGray ;
+                    .imgindia{
+                        @apply flex gap-1 items-center text-sm font-semibold text-white ;
+                        .img{
+                            @apply size-7 rounded-full ;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        @apply w-5/6  border-t-[0.1rem] border-customGray flex flex-col gap-3 py-2 items-center lg:flex-row lg:justify-between ;
+        .left{
+            @apply text-[0.7rem] lg:text-[0.9rem] font-medium text-customGray ;
+            .btn{
+                @apply text-customRed;
+            }
+        }
+        .right{
+            @apply flex h-8 items-center  gap-4  text-lg ;
+            .facebook{
+                @apply size-4 lg:size-6 text-white hover:text-facebookBlue transition-transform duration-300 hover:scale-125;
+            }
+            .instagram{
+                @apply size-4 lg:size-6 text-white transition-transform duration-300 hover:scale-125 hover:text-instagramPink;
+            }
+            .twitter{
+                @apply size-4 lg:size-6 text-white transition-transform duration-300 hover:scale-125 hover:text-twitterBlue;
+            }
+            .linkedin{
+                @apply size-4 lg:size-6 text-white transition-transform duration-300 hover:scale-125  hover:text-linkedinBlue;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.form {
+  @apply mt-4;
+
+  .indicator {
+    @apply sm:hidden text-center text-lg font-medium text-gray-700;
+  }
+
+  .progressbar {
+    @apply hidden sm:grid mx-auto mb-16 w-full grid-cols-2 gap-y-4 sm:w-90p md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-10;
+
+    .steper {
+      @apply flex items-center;
+
+      .name {
+        @apply ms-2 font-medium text-sm text-progress;
+      }
+    }
+  }
+
+  .heading {
+    @apply mb-2 text-center text-3xl font-bold;
+  }
+
+  .subheading {
+    @apply text-center text-sm text-red-500;
+  }
+
+  .queryForm {
+    @apply mx-auto mt-12 w-full md:p-4 p-4;
+
+    .additional {
+      @apply flex flex-col lg:flex-row md:w-93p mx-auto gap-0 lg:gap-4 rounded-lg bg-additional;
+
+      .firts {
+        @apply mx-auto space-y-12 p-4 md:p-12 lg:w-1/2;
+
+
+        .heading {
+          @apply text-22 text-heading font-bold;
+        }
+
+        .desc {
+          @apply w-full rounded-lg border p-4;
+        }
+
+      }
+
+      .second {
+        @apply flex flex-col gap-4 space-y-8 p-4 md:p-[48px] lg:w-1/2;
+
+        .headings {
+          @apply text-22 text-heading font-bold;
+        }
+
+        .inputs {
+          @apply flex items-center gap-2;
+
+          .icon {
+            @apply h-7 w-7 text-primary;
+          }
+
+          .shiftInput {
+            @apply w-full bg-additional border-b-2 focus:outline-none transition-all py-2;
+
+          }
+        }
+
+        .phone {
+          @apply flex items-center gap-2 relative;
+
+          .icon {
+            @apply h-7 w-7 text-primary;
+          }
+
+          .dropdownDiv {
+            @apply relative;
+
+            .btn {
+              @apply flex items-center border-b-2 border-r-2 shadow-sm p-2;
+
+              .imgs {
+                @apply w-6 h-6;
+              }
+            }
+
+            .country {
+              @apply absolute bg-white shadow-md mt-1 w-200 h-100 overflow-x-auto rounded-md z-50;
+
+              .countrychild {
+                @apply flex items-center gap-2 p-2 hover:bg-gray-200 cursor-pointer;
+
+                .iamg {
+                  @apply w-6 h-4;
+                }
+
+                .models {
+                  @apply flex gap-2;
+                }
+              }
+            }
+          }
+
+          .shiftInput {
+            @apply w-full bg-additional border-b-2 focus:outline-none transition-all py-2;
+
+          }
+        }
+
+        .checkbx {
+          @apply flex items-center gap-2;
+
+          .lbl {
+            @apply text-sm font-semibold;
+          }
+        }
+
+      }
+    }
+
+    .err{
+      @apply absolute -bottom-8 text-red-500;
+    }
+
+  }
+
+  .buttons {
+
+    .arr{
+      @apply h-8 w-8;
+    }
+
+    @apply flex justify-center mb-8 gap-4 md:gap-8 lg:gap-32 mt-8 md:mt-0;
+
+    .prev {
+      @apply flex md:w-200 w-130 items-center justify-center gap-2 rounded-full bg-primary md:px-8 md:py-3 py-1 font-semibold text-white;
+    }
+
+    .submt {
+      @apply flex gap-2 justify-center items-center md:w-200 w-130 font-semibold rounded-full bg-primary md:py-3 py-1 text-white;
+    }
+  }
+}

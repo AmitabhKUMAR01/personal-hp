@@ -1,0 +1,43 @@
+.pinnedCard {
+  @apply sticky top-[10vh] z-10 flex h-[90vh] items-center justify-center overflow-hidden max-md:h-[100vh] max-md:w-full max-md:flex-col md:h-[90vh];
+  .container{
+    @apply flex w-full items-center justify-between rounded-xl shadow-md max-md:flex-col max-md:gap-5 max-md:h-[100vh] ;
+  .left {
+    @apply h-[80vh] w-2/5   max-md:h-[40vh] max-md:w-5/6 max-md:rounded-xl;
+    .leftwrapper {
+      @apply relative flex h-full  w-full items-center justify-center bg-cover bg-center;     
+      .motionLeft {
+        @apply absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center max-md:gap-4 md:gap-14 md:pl-16 ;
+        .title {
+          @apply max-md:w-full md:w-4/5 text-3xl font-bold ;
+        }
+        .result {
+          @apply md:-mb-12 max-md:-mb-4 w-4/5 pl-2 font-semibold text-gray-700;
+        }
+        .content {
+          @apply flex max-md:w-full md:w-4/5 items-center md:justify-start max-md:justify-center gap-8  p-4 ;
+          .sub {
+            @apply flex w-1/3 flex-col;
+            h2 {
+              @apply bg-gradient-to-r from-[#ff3c57] to-[#ff7861] bg-clip-text text-5xl text-transparent;
+            }
+            p {
+              @apply w-full text-xs;
+            }
+          }
+        }
+        .button{
+          @apply flex w-4/5 max-md:w-full justify-start;
+        }
+      }
+    }
+  }
+  .right {
+    @apply relative h-[80vh] w-3/5 flex-1 items-center justify-center overflow-hidden max-md:h-[70vh] max-md:w-full;
+    
+      .image {
+        @apply flex h-[90%] w-full items-center object-contain max-md:h-[300px] max-md:w-[300];
+      }
+  }
+}
+}

@@ -1,0 +1,107 @@
+.modal {
+  @apply fixed inset-0 top-0 left-0 right-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity font-applesystem;
+
+  // &.hidden {
+  //   @apply opacity-0 pointer-events-none;
+  // }
+
+  // &.visible {
+  //   @apply opacity-100;
+  // }
+
+  .container {
+    @apply bg-white rounded-2xl w-full max-w-[150vh] max-h-[90vh] overflow-hidden;
+  }
+
+  .header {
+    @apply border-b-2 rounded-lg px-4 pt-4 bg-careerTitle flex justify-between items-center sticky top-0 z-10;
+
+    .title {
+      @apply text-24 font-semibold text-left text-careerHeading;
+    }
+
+    .closeIcon {
+      @apply text-gray-600 text-4xl cursor-pointer;
+    }
+  }
+
+  .social {
+    @apply flex justify-end ml-auto;
+
+    .button {
+      @apply hover:bg-gray-300 rounded-full p-2;
+    }
+
+    .icon {
+      // @apply w-6 h-6;
+    }
+  }
+
+  .content {
+    @apply p-4 overflow-y-auto;
+    max-height: calc(90vh - 80px);
+  }
+
+  .loadingContainer {
+    @apply flex items-center justify-center p-8;
+    flex-direction: column;
+
+    p{
+      @apply mt-1 text-[#666] text-14;
+    }
+
+    .loadingSpin {
+      @apply relative w-16 h-16;
+
+      Image {
+        @apply absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 size-24 text-careerHeading;
+      }
+    }
+  }
+  
+  .details {
+    @apply overflow-y-auto;
+
+    .header1{
+      @apply rounded-lg flex justify-between items-center pr-40 pl-4;
+    }
+
+    .svgImg{
+      @apply flex gap-3 mt-5 mb-5;
+
+      h5 {
+        @apply text-18 text-careerPara font-semi flex items-center gap-2;
+      }
+    }
+
+    .section {
+      @apply mb-2;
+
+      h6 {
+        @apply font-semibold text-careerHeading1 text-14;
+      }
+
+      p { 
+        @apply text-14 font-medium text-careerPara;
+      }
+
+      ul, ol {
+        //  pl-5 list-none
+        @apply text-14;
+      
+        span {
+          @apply mb-2 font-normal text-heading relative;
+        }
+
+        li {
+          @apply mb-2 font-normal text-[#555] pl-6 relative;
+
+          &::before{
+            content: "•";
+            @apply text-careerHeading absolute left-2 w-4 h-4;
+          }
+        }
+      } 
+    }
+  }
+}

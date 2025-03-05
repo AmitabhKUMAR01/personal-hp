@@ -1,0 +1,8 @@
+.about {
+  @apply w-95p md:w-82p mx-auto px-4 py-12 flex flex-col gap-20;
+
+  p {
+    @apply text-gray-600 leading-relaxed;
+  }
+}
+

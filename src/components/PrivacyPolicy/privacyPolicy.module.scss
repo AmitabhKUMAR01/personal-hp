@@ -1,0 +1,56 @@
+.privacyPolicy {
+  @apply mx-auto flex justify-center p-6 leading-relaxed text-gray-700;
+
+  .wrapper {
+    @apply flex flex-col gap-5;
+    @apply w-5/6;
+    .header {
+      h2 {
+        @apply mb-2 text-xl font-bold text-black;
+      }
+    }
+
+    h3 {
+      @apply mb-2 text-lg font-semibold text-black;
+    }
+    .subheading {
+      @apply pl-5;
+
+      h4 {
+        @apply mb-1 text-base font-semibold text-gray-800;
+      }
+
+      p {
+        @apply mb-4 text-base text-gray-600;
+      }
+    }
+
+    ul {
+      @apply mb-4 list-disc pl-5;
+
+      li {
+        @apply mb-2 text-gray-700;
+      }
+    }
+    .list {
+      @apply mb-4 list-disc pl-8;
+
+      li {
+        @apply mb-2 text-gray-700;
+      }
+    }
+
+    .important-note {
+      @apply font-semibold italic text-red-500;
+    }
+    .accept {
+      @apply w-full rounded-xl p-8 shadow-xl;
+      p {
+        @apply text-lg font-semibold text-red-500;
+      }
+      .btn {
+        @apply float-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.button {
+  @apply inline-flex items-center justify-center font-medium transition-colors;
+
+  &.primary {
+    @apply bg-gradient-to-r from-[#ff3c57] to-[#ff7861] text-white;
+  }
+
+  &.sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+
+  &.md {
+    @apply px-4 py-2 text-base;
+  }
+
+  &.lg {
+    @apply px-6 py-3 text-lg;
+  }
+
+  &.xl {
+    @apply px-16 py-3 text-xl;
+  }
+
+  &.border-sm {
+    @apply rounded-sm;
+  }
+  
+  &.border-md {
+    @apply rounded-md;
+  }
+  
+  &.border-lg {
+    @apply rounded-lg;
+  }
+  
+  &.border-xl {
+    @apply rounded-xl;
+  }
+ 
+}

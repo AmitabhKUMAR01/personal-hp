@@ -1,0 +1,60 @@
+.cookiePolicy {
+  @apply flex w-full justify-center leading-relaxed text-gray-700 py-10;
+
+  .wrapper {
+    @apply flex w-5/6 flex-col gap-5;
+    .headerDiv {
+        @apply flex flex-col gap-4;
+      .header {
+        @apply text-lg font-bold text-black;
+      }
+
+      .headerDescription {
+        @apply text-base text-gray-600;
+      }
+    }
+    .para{
+        @apply -mb-1;
+    }
+
+    ol {
+      @apply list-decimal pl-5;
+
+      li {
+        @apply font-semibold text-gray-700 ;
+
+        h3 {
+          @apply inline text-lg font-semibold text-black;
+        }
+
+        p {
+          @apply font-normal text-gray-600;
+        }
+      }
+    }
+    .subdata {
+        @apply flex flex-col gap-2;
+      h2 {
+        @apply text-17 font-semibold;
+      }
+    }
+    .contactUs {
+        @apply flex flex-col gap-2;
+      h2 {
+        @apply text-17 font-semibold;
+      }
+      .link{
+        @apply text-red-500 italic;
+      }
+    }
+    .accept{
+        @apply w-full shadow-xl rounded-xl p-8;
+        p{
+           @apply text-lg text-red-500 font-semibold;
+        }
+        .btn{
+            @apply float-end;
+        }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.container{
+@apply flex justify-center items-center w-full py-5;
+
+.wrapper {
+    @apply flex  justify-center items-center w-full ;
+  
+    .frameworkslider {
+      @apply flex items-center  gap-4 h-28;
+  
+      .images {
+        @apply flex flex-col justify-center items-center w-full h-28;
+
+        img {
+            @apply w-20
+             h-20 object-fill aspect-auto;
+          }
+  
+        .heading {
+         @apply font-medium  ;
+          
+          
+        }
+  
+        
+      }
+    }
+  }
+}

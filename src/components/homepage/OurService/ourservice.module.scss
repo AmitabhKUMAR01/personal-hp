@@ -1,0 +1,26 @@
+.container {
+  @apply flex justify-end h-auto items-center w-full py-10 2xl:py-10 max-xl:flex-col;
+  .wrapper {
+    @apply flex w-[92%] max-md:w-5/6 justify-end  items-center  2xl:h-420;
+
+    .wrapperContainer {
+      @apply flex justify-between items-center w-full max-xl:flex-col max-xl:gap-4 ;
+
+      .left {
+        @apply w-1/4 flex flex-col gap-3 justify-normal xl:justify-between  max-xl:w-full  2xl:h-420;
+
+        h1 {
+          @apply text-3xl font-bold font-montserrat 2xl:text-5xl text-red-500;
+        }
+
+        .textContainer {
+          @apply overflow-hidden relative text-left h-auto  overflow-y-scroll font-medium font-montserrat text-customGray xl:h-300 max-sm:text-justify max-sm:leading-7 2xl:text-lg 2xl:h-full ;
+        }
+       
+      }
+      .right {
+        @apply w-[73%] max-xl:w-full ;
+    }
+  }
+}
+}

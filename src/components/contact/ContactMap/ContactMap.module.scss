@@ -1,0 +1,13 @@
+.container {
+    @apply w-full h-450 mb-8;
+    .container1{
+        @apply w-100p h-450;
+        .container2{
+            @apply w-100p h-450 ;
+            .iframe{
+                @apply block w-100p border-0  h-450;
+            }
+        }
+    }
+
+}
